@@ -1,6 +1,10 @@
-activate = input("enter comm: ")
 
-if activate == "start":
-    print("hello world")
-else:
-    print("wrong comm")
+from progress.spinner import Spinner
+
+state = 0
+spinner = Spinner('Loading ')
+while state != 'FINISHED':
+    # Do some work
+    spinner.next()
+
+
