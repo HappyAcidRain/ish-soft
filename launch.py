@@ -1,15 +1,19 @@
+# colorama stuff
+from colorama import init, Fore, Back, Style
+init()
 
 listOfProgs = ['load-toy', 'msg-write', 'love-bot']
 curNum = 0
 
-print("WELLCOME TO ISH_SOFT!")
-print("CHOOSE NEEDED SOFT:")
+print(Fore.BLUE + "WELLCOME TO ISH_SOFT!")
+print(Fore.BLUE + "CHOOSE NEEDED SOFT:")
 
 for items in listOfProgs:
-    print(f"[{curNum}] | {listOfProgs[curNum]}")
+    print(Fore.BLUE + f"[{curNum}] | {listOfProgs[curNum]}")
     curNum += 1
 
-run = input("ENTER SOFT NUM: ")
+
+run = input(Fore.BLUE + "ENTER SOFT NUM: ")
 
 if run == "0":
     print(" \n ")
@@ -27,4 +31,4 @@ elif run == "2":
     loveBot
 
 else:
-    print("INVALID NAME!")
+    print(Fore.BLUE + "INVALID NAME!")
