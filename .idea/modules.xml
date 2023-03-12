@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ish-soft.iml" filepath="$PROJECT_DIR$/.idea/ish-soft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TelegramBots/.idea/pythonProject2.iml" filepath="$PROJECT_DIR$/../TelegramBots/.idea/pythonProject2.iml" />
     </modules>
   </component>
 </project>
