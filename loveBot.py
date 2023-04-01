@@ -5,6 +5,7 @@ from requests.exceptions import ConnectionError, ReadTimeout
 
 # прочее
 import telebot
+import time 
 
 bot = telebot.TeleBot('6127536496:AAH09NmHcoUsKdLuzd0dFYoFwQxjFk6XBBI')
 
@@ -35,6 +36,25 @@ def start(message):
     bot.send_message(5613754332, 'Я люблю тебя!❤️')
     bot.send_message(message.chat.id, 'отправленно!!')
     print("msg has been sended!")
+
+@bot.message_handler(commands=['waitLove'])
+def start(message):
+    print("and now, we wait!")
+
+    stepie = 0
+    while stepie == 0:
+
+        now = datetime.now() 
+        current_time = int(now.strftime("%H"))
+
+        if current_time == 00:
+            bot.send_message(5613754332, 'Я люблю тебя!❤️')
+            bot.send_message(message.chat.id, 'отправленно!!')
+            print("msg has been sended!")
+            stepie += 1
+        else:
+            pass
+        
 
 
 @bot.message_handler(commands=['status'])
