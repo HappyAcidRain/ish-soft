@@ -52,7 +52,7 @@ def start(message):
             bot.send_message(message.chat.id, 'отправленно!!')
             print("msg has been sended!")
             stepie += 1
-        else:
+        else:P
             pass
         
 
